@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e539bcb5-4488-420f-9b2b-49e302bd890d" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e539bcb5-4488-420f-9b2b-49e302bd890dfileName">test</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="properties" name="Properties" id="2f1b2064-4477-4517-b2df-96329ab04591">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>test</con:name>
+          <con:value>test</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Groovy Script" id="6bf9a0ce-9314-4f62-8deb-cd6762340850">
+    <con:settings/>
+    <con:config>
+      <script>def test = context.expand( '${Properties#test}' )</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink" id="8e98d9c1-ebf2-4a0b-9e2f-05236c988853">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="Excel">
+        <con:configuration>
+          <file/>
+          <outfile/>
+          <worksheet/>
+          <cell>${Properties#test}</cell>
+          <evaluateFormulas>false</evaluateFormulas>
+          <append>false</append>
+        </con:configuration>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>test</con:name>
+          <con:value>${Properties#test}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="test" id="b456dbc7-4ac5-4c51-b116-0a25f46fe07c">
+    <con:settings/>
+    <con:config>
+      <script>log.info("test")
+return "test"</script>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>TEST</con:name>
+      <con:value>test</con:value>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>6bf9a0ce-9314-4f62-8deb-cd6762340850</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>
