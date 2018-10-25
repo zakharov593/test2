@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1d3e882b-ca6f-48a1-a7d9-e1623eff2b4d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="testtest" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1d3e882b-ca6f-48a1-a7d9-e1623eff2b4dfileName">testtest</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Testetstsetsets" id="353c08ac-0e75-4fe2-8a9f-4bb4efc65c4c">
+    <con:settings/>
+    <con:config service="REST Service 1" resourcePath="/" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Testetstsetsets" id="0c760039-ae51-4c42-961b-f2c4e2f4dc47" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://test.com</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

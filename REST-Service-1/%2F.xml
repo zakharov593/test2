@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/" path="/" id="b74a21a8-0ebf-4124-80a9-33c797a134c8" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b74a21a8-0ebf-4124-80a9-33c797a134c8fileName">%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="cb8c084b-a47b-44d7-b8dd-820a8e66a5e9" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET Request" id="0c760039-ae51-4c42-961b-f2c4e2f4dc47" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://test.com</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
