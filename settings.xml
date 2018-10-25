@@ -5,7 +5,7 @@
   </con:settings>
   <con:vcsConfiguration>
     <con:vcsName>Git</con:vcsName>
-    <con:repositoryIdentifier>c:\Users\Kirill.Zakharov\Desktop\Projects\Project-AA</con:repositoryIdentifier>
+    <con:repositoryIdentifier>https://github.com/zakharov593/test2.git</con:repositoryIdentifier>
   </con:vcsConfiguration>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:properties>
