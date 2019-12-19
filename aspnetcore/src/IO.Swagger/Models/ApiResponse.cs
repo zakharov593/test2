@@ -30,7 +30,7 @@ namespace IO.Swagger.Models
         /// <summary>
         /// Gets or Sets Y
         /// </summary>
-        [DataMember(Name="/&quot;y&quot;")]
+        [DataMember(Name="&quot;y&quot;")]
         public string Y { get; set; }
 
         /// <summary>

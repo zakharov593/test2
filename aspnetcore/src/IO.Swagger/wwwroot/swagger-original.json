@@ -836,7 +836,7 @@
     "ApiResponse" : {
       "type" : "object",
       "properties" : {
-        "/\"y\"" : {
+        "\"y\"" : {
           "type" : "string"
         },
         "code" : {
@@ -852,7 +852,7 @@
       },
       "example" : {
         "code" : 0,
-        "/\"y\"" : "/\"y\"",
+        "\"y\"" : "\"y\"",
         "type" : "type",
         "message" : "message"
       }
