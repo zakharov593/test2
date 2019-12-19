@@ -236,7 +236,7 @@ namespace IO.Swagger.Controllers
             // return StatusCode(200, default(ApiResponse));
 
             string exampleJson = null;
-            exampleJson = "{\n  \"code\" : 0,\n  \"\\"y\\"\" : \"\\"y\\"\",\n  \"type\" : \"type\",\n  \"message\" : \"message\"\n}";
+            exampleJson = "{\n  \"code\" : 0,\n  \"y\" : \"y\",\n  \"type\" : \"type\",\n  \"message\" : \"message\"\n}";
             
             var example = exampleJson != null
             ? JsonConvert.DeserializeObject<ApiResponse>(exampleJson)
